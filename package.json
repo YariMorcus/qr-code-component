@@ -1,5 +1,5 @@
 {
-  "name": "QR code component",
+  "name": "QR code component (with image)",
   "description": "Challenge by Frontend Mentor (https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)",
   "version": "1.0.0",
   "main": "index.js",
@@ -216,7 +216,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/YariMorcus/qr-code-component"
   },
   "author": "Yari Morcus",
   "license": "MIT",
