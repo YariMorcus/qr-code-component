@@ -12,14 +12,13 @@ Primary use:    Portfolio project
     2. ([VARIABLES] + ) Typography
     3. Global
     4. Utility classes
-    5. Header
-        5.1 Headings
-    6. Navigation
-    7. Cards
-    8. Content
-    9. Footer
-    10. Media queries
--------------------------------------------------------------------*/
+    5. Card component
+    6. Header
+        6.1 Headings
+    7. Content
+    8. Footer
+
+    -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
 1. [VARIABLES] Colors
@@ -30,6 +29,7 @@ $light-grey: hsl(212, 46%, 89%);
 $grayish-blue: hsl(220, 15%, 55%);
 $dark-blue: hsl(218, 44%, 22%);
 $background-color: hsl(212, 45%, 89%);
+$dodger-blue: hsl(216, 100%, 61%);
 
 /*------------------------------------------------------------------
 2. ([VARIABLES] + ) Typography
@@ -63,6 +63,12 @@ $font-size-paragraph: 1.5rem;
 3. Global
 */
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 html {
     box-sizing: border-box;
     font-size: 10px;
@@ -85,6 +91,18 @@ main {
     align-items: center;
 }
 
+/*------------------------------------------------------------------
+4. Utility classes
+*/
+
+.text-centered {
+    text-align: center;
+}
+
+/*------------------------------------------------------------------
+5. Card component
+*/
+
 article {
     margin: 0 auto;
     padding: 1.6rem;
@@ -94,6 +112,23 @@ article {
     border-radius: 2rem;
     box-shadow: 3px 10px 3px $light-grey;
 }
+
+/*------------------------------------------------------------------
+6. Header
+    6.1 Headings
+*/
+
+h1 {
+    margin-top: 2.9rem;
+    margin-bottom: 1rem;
+    font-family: "out-fit-bold", sans-serif;
+    font-size: 2.1rem;
+    color: $dark-blue;
+}
+
+/*------------------------------------------------------------------
+7. Content
+*/
 
 img {
     max-width: 100%;
@@ -106,28 +141,17 @@ p {
     color: $grayish-blue;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 /*------------------------------------------------------------------
-4. Utility classes
+8. Footer
 */
 
-.text-centered {
-    text-align: center;
-}
-
-/*------------------------------------------------------------------
-5. Header
-    5.1 Headings
-*/
-h1 {
-    margin-top: 2.9rem;
-    margin-bottom: 1rem;
-    font-family: "out-fit-bold", sans-serif;
-    font-size: 2.1rem;
-    color: $dark-blue;
+.attribution {
+    padding: 1.28rem;
+    font-size: 1.4rem; 
+    background-color: $dodger-blue;
+    
+    &, 
+    &-link {
+        color: $white;
+    }
 }
