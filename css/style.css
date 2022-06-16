@@ -1,6 +1,50 @@
+/*------------------------------------------------------------------
+[Main Stylesheet]
+Project:    QR code component
+Version:    1.0
+Assigned to:    Yari Morcus
+Primary use:    Portfolio project 
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+    1. [VARIABLES] Colors
+    2. ([VARIABLES] + ) Typography
+    3. Global
+    5. Header
+        5.1 Headings
+    6. Navigation
+    7. Cards
+    8. Content
+    9. Footer
+    10. Media queries
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+1. [VARIABLES] Colors
+*/
+/*------------------------------------------------------------------
+2. ([VARIABLES] + ) Typography
+*/
+@font-face {
+  font-family: "outfit";
+  src: url("../fonts/outfit-regular.woff2") format("woff2"), url("../fonts/outfit-regular.woff") format("woff"), url("../fonts/outfit-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "outfit-bold";
+  src: url("../fonts/outfit-bold.woff2") format("woff2"), url("../fonts/outfit-bold.woff") format("woff"), url("../fonts/outfit-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/*------------------------------------------------------------------
+3. Global
+*/
 html {
   box-sizing: border-box;
   font-size: 10px;
+  font-family: "outfit";
 }
 
 html,
