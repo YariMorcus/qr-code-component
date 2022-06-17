@@ -91,6 +91,22 @@ main {
     align-items: center;
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid;
+
+    &:focus {
+        outline: 1px solid $white;
+    }
+
+    &[href^="https"] {
+        background: url("../images/external-link-icon.svg") no-repeat 100% 0;
+        background-size: 16px 16px;
+        padding-right: 20px;
+    }
+}
+
 /*------------------------------------------------------------------
 4. Utility classes
 */
