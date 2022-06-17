@@ -1,21 +1,175 @@
+/*------------------------------------------------------------------
+[Main Stylesheet]
+Project:    QR code component
+Version:    1.0
+Assigned to:    Yari Morcus
+Primary use:    Portfolio project 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+    1. [VARIABLES] Colors
+    2. ([VARIABLES] + ) Typography
+    3. Global
+    4. Utility classes
+    5. Card component
+    6. Header
+        6.1 Headings
+    7. Content
+    8. Footer
+
+    -------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+1. [VARIABLES] Colors
+*/
+
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(212, 46%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+$background-color: hsl(212, 45%, 89%);
+$dodger-blue: hsl(216, 100%, 61%);
+
+/*------------------------------------------------------------------
+2. ([VARIABLES] + ) Typography
+*/
+
+// Font familiy: outfit, font-weight: normal
+@font-face {
+    font-family: 'outfit';
+    src: url('../fonts/outfit-regular.woff2') format('woff2'),
+        url('../fonts/outfit-regular.woff') format('woff'),
+        url('../fonts/outfit-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Font familiy: outfit, font-weight: bold
+@font-face {
+    font-family: 'outfit-bold';
+    src: url('../fonts/outfit-bold.woff2') format('woff2'),
+        url('../fonts/outfit-bold.woff') format('woff'),
+        url('../fonts/outfit-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+$font-size-paragraph: 1.5rem;
+
+/*------------------------------------------------------------------
+3. Global
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 html {
     box-sizing: border-box;
     font-size: 10px;
+    font-family: "outfit", sans-serif;
+    background-color: $background-color;
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid;
+
+    &:focus {
+        outline: 1px solid $white;
+    }
+
+    &[href^="https"] {
+        background: url("../images/external-link-icon.png") no-repeat 100% 0; // Fallback image
+        background: url("../images/external-link-icon.svg") no-repeat 100% 0;
+        background-size: 16px 16px;
+        padding-right: 20px;
+    }
+}
+
+/*------------------------------------------------------------------
+4. Utility classes
+*/
+
+.text-centered {
+    text-align: center;
+}
+
+/*------------------------------------------------------------------
+5. Card component
+*/
+
+article {
+    margin: 0 auto;
+    padding: 1.6rem;
+    max-width: 32rem;
+    background-color: $white;
+    border: 2px solid $light-grey;
+    border-radius: 2rem;
+    box-shadow: 1.5rem 2rem 6.7rem -6.1rem $grayish-blue;
+}
+
+/*------------------------------------------------------------------
+6. Header
+    6.1 Headings
+*/
+
+h1 {
+    margin-top: 2.3rem;
+    margin-bottom: 1rem;
+    font-family: "out-fit-bold", sans-serif;
+    font-size: 2.1rem;
+    color: $dark-blue;
+}
+
+/*------------------------------------------------------------------
+7. Content
+*/
 
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 1rem;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+p {
+    margin: 1.5rem 1rem 2.5rem;
+    font-size: $font-size-paragraph;
+    color: $grayish-blue;
+}
+
+/*------------------------------------------------------------------
+8. Footer
+*/
+
+.attribution {
+    padding: 1.28rem;
+    font-size: 1.4rem; 
+    background-color: $dodger-blue;
+    
+    &, 
+    &-link {
+        color: $white;
+    }
 }
