@@ -78,6 +78,7 @@ a:focus {
   outline: 1px solid hsl(0deg, 0%, 100%);
 }
 a[href^=https] {
+  background: url("../images/external-link-icon.png") no-repeat 100% 0;
   background: url("../images/external-link-icon.svg") no-repeat 100% 0;
   background-size: 16px 16px;
   padding-right: 20px;
