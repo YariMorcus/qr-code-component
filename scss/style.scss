@@ -17,6 +17,7 @@ Primary use:    Portfolio project
         6.1 Headings
     7. Content
     8. Footer
+    9. Media queries
 
     -------------------------------------------------------------------*/
 
@@ -164,5 +165,16 @@ p {
     &, 
     &-link {
         color: $white;
+    }
+}
+
+/*------------------------------------------------------------------
+9. Media queries
+*/
+
+@media (orientation: landscape) {
+    article {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }

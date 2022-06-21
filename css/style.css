@@ -16,6 +16,7 @@ Primary use:    Portfolio project
         6.1 Headings
     7. Content
     8. Footer
+    9. Media queries
 
     -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -135,4 +136,14 @@ p {
 }
 .attribution, .attribution-link {
   color: hsl(0deg, 0%, 100%);
+}
+
+/*------------------------------------------------------------------
+9. Media queries
+*/
+@media (orientation: landscape) {
+  article {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
