@@ -1,0 +1,170 @@
+/*------------------------------------------------------------------
+[Main Stylesheet]
+Project:    QR code component
+Version:    1.0
+Assigned to:    Yari Morcus
+Primary use:    Portfolio project 
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+    1. [VARIABLES] Colors
+    2. ([VARIABLES] + ) Typography
+    3. Global
+    4. Utility classes
+    5. Card component
+    6. Header
+        6.1 Headings
+    7. Content
+    8. Footer
+    9. Media queries
+
+    -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+1. [VARIABLES] Colors
+*/
+/*------------------------------------------------------------------
+2. ([VARIABLES] + ) Typography
+*/
+@font-face {
+  font-family: "outfit";
+  src: url("../fonts/outfit-regular.woff2") format("woff2"), url("../fonts/outfit-regular.woff") format("woff"), url("../fonts/outfit-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "outfit-bold";
+  src: url("../fonts/outfit-bold.woff2") format("woff2"), url("../fonts/outfit-bold.woff") format("woff"), url("../fonts/outfit-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/*------------------------------------------------------------------
+3. Global
+*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "outfit", sans-serif;
+  background-color: hsl(212deg, 45%, 89%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+a:focus {
+  outline: 1px solid hsl(0deg, 0%, 100%);
+}
+
+/*------------------------------------------------------------------
+4. Utility classes
+*/
+.text-centered {
+  text-align: center;
+}
+
+/*------------------------------------------------------------------
+5. Card component
+*/
+article {
+  margin: 0 auto;
+  padding: 1.6rem;
+  max-width: 32rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(212deg, 46%, 89%);
+  border-radius: 2rem;
+  box-shadow: 1.5rem 2rem 6.7rem -6.1rem hsl(220deg, 15%, 55%);
+}
+
+/*------------------------------------------------------------------
+6. Header
+    6.1 Headings
+*/
+header {
+  position: relative;
+  background-color: hsl(216deg, 95%, 57%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 284px;
+  border-radius: 1rem;
+}
+
+#circles,
+#qr {
+  position: absolute;
+}
+
+#circles {
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+}
+
+h1 {
+  margin-top: 2.3rem;
+  margin-bottom: 1rem;
+  font-family: "out-fit-bold", sans-serif;
+  font-size: 2.1rem;
+  color: hsl(218deg, 44%, 22%);
+}
+
+/*------------------------------------------------------------------
+7. Content
+*/
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+p {
+  margin: 1.5rem 1rem 2.5rem;
+  font-size: 1.5rem;
+  color: hsl(220deg, 15%, 55%);
+}
+
+/*------------------------------------------------------------------
+8. Footer
+*/
+.attribution {
+  padding: 1.28rem;
+  font-size: 1.4rem;
+  background-color: hsl(216deg, 95%, 57%);
+}
+.attribution, .attribution-link {
+  color: hsl(0deg, 0%, 100%);
+}
+
+/*------------------------------------------------------------------
+9. Media queries
+*/
+@media (orientation: landscape) {
+  article {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

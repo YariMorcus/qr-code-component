@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="">
+  <meta name="author" content="Yari Morcus">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/qrious.min.js"></script>
+
+</head>
+<body>
+
+  <main>
+
+    <article>
+
+      <header>
+
+        <svg viewBox="0 0 284 284" xmlns="http://www.w3.org/2000/svg" id="circles">
+          <circle cx="35" cy="-1" r="160" fill="#3784fe"></circle>
+          <circle cx="266" cy="341" r="140" fill="#3784fe"></circle>
+        </svg>
+        <!-- <img src="images/image-qr-code.png" alt="QR code that links to frontendmentor" width="576" height="576"> -->
+        <canvas id="qr"></canvas>
+
+
+      </header>
+
+      <section>
+        <h1 class="text-centered">Improve your front-end skills by building projects</h1>
+        <p class="text-centered">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </section>
+
+    </article>
+
+  </main>
+
+  <footer class="attribution text-centered">
+    Challenge by <a class="attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="attribution-link" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari Morcus</a>.
+  </footer>
+
+  <script>
+    // https://github.com/neocotic/qrious#install
+    (function() {
+      const QR = new QRious({
+        element: document.getElementById("qr"),
+        value: "https://frontendmentor.io",
+        background: "#fff",
+        foreground: "hsl(216, 100%, 61%)",
+        size: 160
+      });
+    })();
+  </script>
+</body>
+</html>
