@@ -9,6 +9,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
+- [Pure JavaScript library solution (QRious)](#pure-javascript-library-solution-qrious)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
