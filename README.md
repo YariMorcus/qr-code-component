@@ -28,6 +28,14 @@ To build the QR code component according to the given designs, and make it look 
 - Solution URL: [Open GitHub repository](https://github.com/YariMorcus/qr-code-component)
 - Live Site URL: [open GitHub Pages of repository](https://yarimorcus.github.io/qr-code-component)
 
+## Pure JavaScript library solution (QRious)
+
+I created an alternative solution to the raster image that has been used for the QR code (supplied by Frontend Mentor).
+
+This solution generates the QR code with a JavaScript library called QRious, created by neocotic). All the files that are necessary for this solution can be found in the folder named 'qrcode-generated-by-js'.
+Copy and paste all the files in this folder in the root of your project, replacing the already existing files.
+
+The QRious pure JavaScript library can be found [in this GitHub repository](https://github.com/neocotic/qrious).
 ## My process
 
 ### Built with
